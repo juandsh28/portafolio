@@ -1,0 +1,122 @@
+.skills__container {
+  grid-template-columns: repeat(2, 450px);
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.skills__content {
+  background-color: var(--container-color);
+  border: 3px solid rgba(254, 254, 254, 0.15);
+  padding: 2.5rem 4rem;
+  border-radius: 1.25rem;
+}
+
+.skills__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-2);
+  color: var(--title-color-dark);
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.skills__group {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1.75rem;
+}
+
+.skills__data {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.bxl-html5,
+.bxl-css3,
+.bxl-javascript,
+.bxl-react,
+.bxl-git,
+.bxl-github,
+.bxl-figma,
+.bxl-wordpress {
+  font-size: 1.75rem;
+}
+
+.bxl-html5 {
+  color:#f06529;
+}
+
+.bxl-css3 {
+  color:#2965f1;
+}
+
+.bxl-javascript {
+  color:#F0DB4F;
+}
+
+.bxl-react {
+  color: #61DBFB;
+}
+
+.bxl-git {
+  color: #F1502F;
+}
+
+.bxl-github {
+  color: #fafafa;
+}
+
+.bxl-figma {
+  color: #0ACF83;
+}
+
+.bxl-wordpress {
+  color: #037ea7;
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 24px;
+  color: var(--title-color);
+}
+
+.skills__level {
+  font-size: var(--small-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .skills__container {
+    grid-template-columns: max-content;
+    column-gap: 2rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__content {
+    padding: 1.5rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .skills__box {
+    column-gap: 1.25rem;
+  }
+
+  .skills__name {
+    font-size: var(--samall-font-size);
+  }
+}
